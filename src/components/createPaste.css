@@ -1,0 +1,75 @@
+
+.create-paste {
+    position: relative; /* For positioning logo */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Styling for the logo positioned at the top-left corner */
+  .logo-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo {
+    width: 150px; 
+    height: auto;
+  }
+  
+  /* Centering the header */
+  .create-paste-header {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  .create-paste-header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Styling for the form and its elements */
+  .create-paste-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px; /* Space between form groups */
+    text-align: left; /* Label alignment */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    height: 200px; 
+    font-family: monospace; /* Use monospace font for code display */
+  }
+  
+  /* Position the save button at the bottom of the last input box */
+  .save-button {
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  /* Styling for the confirmation message */
+  .confirmation-message {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

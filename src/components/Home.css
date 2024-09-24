@@ -1,0 +1,30 @@
+.logo-logout-container {
+    display: flex;
+    justify-content: space-between; /* Spread logo and logout button to opposite ends */
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px); 
+    z-index: 100; /* Ensure it's above other elements */
+}
+
+.logo-top-left {
+    margin-right: auto; /* Pushes the logo to the far left */
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: auto; /* Pushes the button to the far right */
+}
+
+.logout-button:hover {
+    background-color: #e53935;
+}
