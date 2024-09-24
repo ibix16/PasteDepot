@@ -1,15 +1,15 @@
-import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals';
+import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals';
 
-const reportWebVitals = (metric) => {
-  console.log(metric);
+const reportWebVitals = (onPerfEntry) => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
 };
-
-if (process.env.NODE_ENV === 'production') {
-  getCLS(reportWebVitals);
-  getFCP(reportWebVitals);
-  getFID(reportWebVitals);
-  getLCP(reportWebVitals);
-  getTTFB(reportWebVitals);
-}
 
 export default reportWebVitals;
