@@ -1,5 +1,7 @@
 # PasteDepot
 
+![Screenshot 2024-09-29 at 10 59 02 PM](https://github.com/user-attachments/assets/564156c2-ecd7-4199-83f4-53f70cd6fa56)
+
 ## Description
 
 **PasteDepot** is a web-based application that allows users to create, share, and store code snippets. Users can sign up, log in, and create their own pastes that are stored in the backend using Supabase. Each paste is given a unique link, allowing easy sharing with others. This project aims to simplify the sharing of code snippets across different users, offering an intuitive and fast experience.
